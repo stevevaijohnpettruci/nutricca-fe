@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import {
-  Leaf,
   Menu,
   X,
   ArrowRight,
@@ -9,12 +8,8 @@ import {
   Moon,
   Apple,
   TrendingUp,
-  Check,
   ChevronRight,
   Target,
-  Activity,
-  Heart,
-  Zap,
   PersonStanding,
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -117,8 +112,9 @@ function DashboardMockup() {
             Good morning, Arya 👋
           </h3>
         </div>
-        <div className="w-9 h-9 rounded-full bg-green-100 flex items-center justify-center">
-          <Leaf size={16} className="text-green-600" />
+        <div className="w-9 h-9 flex items-center justify-center">
+          {/* Changed Icon to public/favicon.svg */}
+          <img src="/favicon.svg" alt="Nutricca Icon" className="w-8 h-8 object-contain" />
         </div>
       </div>
 
@@ -325,9 +321,12 @@ export const LandingPage = () => {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center shadow-md shadow-green-600/20">
-              <Leaf size={16} className="text-white" />
-            </div>
+            {/* Changed Icon to public/favicon.svg */}
+            <img 
+              src="/favicon.svg" 
+              alt="Nutricca Logo" 
+              className="w-8 h-8 object-contain" 
+            />
             <span className="text-[15px] font-bold tracking-tight text-slate-900">
               Nutricca
             </span>
@@ -651,9 +650,12 @@ export const LandingPage = () => {
       <footer className="border-t border-slate-200 px-6 py-10 bg-white">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-green-600 rounded-lg flex items-center justify-center">
-              <Leaf size={14} className="text-white" />
-            </div>
+            {/* Changed Icon to public/favicon.svg */}
+            <img 
+              src="/favicon.svg" 
+              alt="Nutricca Logo" 
+              className="w-7 h-7 object-contain" 
+            />
             <span className="text-sm font-bold text-slate-900">Nutricca</span>
           </div>
           <p className="text-xs text-slate-400">
