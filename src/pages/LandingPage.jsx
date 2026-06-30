@@ -16,7 +16,7 @@ import {
   Heart,
   Zap,
   PersonStanding,
-} from 'lucide';
+} from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { AreaChart, Area, ResponsiveContainer, Tooltip } from 'recharts';
 
